@@ -11,6 +11,21 @@ body {
     background: #111;
 }
 
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+  }
+  
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.4);
+}
+  
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 h1, h3 {
     font-weight: 400;
 }
@@ -92,8 +107,8 @@ li {
     height: 100%;
     top: 0;
     right: 0;
-    background: rgba(110, 110, 110, 0.25);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    background: rgba(110, 110, 110, 0.25);
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(225, 225, 225, 0.18);
