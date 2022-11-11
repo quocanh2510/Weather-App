@@ -45,7 +45,7 @@ const fetchWeatherData = () => {
         .then(res => res.json())
         .then(data => {
             country.innerHTML = data.location.country
-            temp.innerHTML = data.current.temp_c + '&#176;'
+            temp.innerHTML = data.current.temp_c + '&#176;' + 'C'
             conditionOutput.innerHTML = data.current.condition.text
 
             const date = data.location.localtime
