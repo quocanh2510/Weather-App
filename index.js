@@ -54,7 +54,7 @@ const fetchWeatherData = () => {
             const d = parseInt(date.substr(8, 2))
             const time = date.substr(11)
 
-            dateOutput.innerHTML = `${d}, ${m}, ${y}`
+            dateOutput.innerHTML = `${d}/${m}/${y}`
             timeOutput.innerHTML = time
 
             nameOutput.innerHTML = data.location.name
