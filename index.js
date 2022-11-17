@@ -44,7 +44,6 @@ const fetchWeatherData = () => {
     fetch(`http://api.weatherapi.com/v1/current.json?key=0a3f7b9253a441379de163438221711&q=${cityInput}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             country.innerHTML = data.location.country
             temp.innerHTML = data.current.temp_c + '&#176;' + 'C'
             conditionOutput.innerHTML = data.current.condition.text
