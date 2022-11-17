@@ -41,7 +41,7 @@ form.addEventListener('submit', e => {
 })
 
 const fetchWeatherData = () => {
-    fetch(`https://api.weatherapi.com/v1/current.json?key=a92af07620434feaa6374846223010&q=${cityInput}`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=0a3f7b9253a441379de163438221711&q=${cityInput}&aqi=no`)
         .then(res => res.json())
         .then(data => {
             country.innerHTML = data.location.country
