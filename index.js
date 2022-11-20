@@ -16,6 +16,7 @@ const form = $('#locationInput')
 const search = $('.search')
 const btn = $('submit')
 const cities = $$('.city')
+const loading = $('.loading')
 
 //Default city when the page loads
 let cityInput = 'Ha Noi'
@@ -137,3 +138,8 @@ const fetchWeatherData = () => {
 fetchWeatherData()
 
 app.style.opacity = '1'
+
+setTimeout(() => {
+    loading.classList.remove('loading')
+    loading.classList.add('loaded')
+}, 3000)
